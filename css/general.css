@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	background:url("../images/new.jpg");
+	font-family: Arial, sans-serif;
+	height: 100%;
+}
+h3 {
+	text-align:center;
+	color:#fff;
+	text-decoration:underline;
+	padding:30px;
+	font-size:25px;
+}
+p {
+	color:#fff;
+	font-size:20px;
+}
+a {
+	color:#666;
+}
+a:hover {
+	color:#06F;
+}
+a:visited {
+	color:#fff;
+}
+.header {
+	background-color:#151538;
+	text-align:center;
+	margin: 0 auto;
+	width: 100%;
+}
+.container {
+	width:925px;
+	margin:0 auto 60px;
+	min-height:100%;
+	position:relative;
+}
+.inner-body {
+	/*margin:70px;*/
+	clear:left;
+	width: 700px;
+	float: left;
+	display: inline;
+	padding: 30px 1.333%;
+	margin-bottom:-100px;
+	padding-bottom:60px;
+}
+.sidebar {
+	width: 190px;
+	border: 1px solid;
+	float: right;
+	display:inline;
+	padding-top:30px;
+}
+.push {
+	height:100px;
+	clear:both;
+}
+.footer {
+	text-align:center;
+	background-color:#151538;
+	float:left;
+	position:relative;
+	width:100%;
+	height:100px;
+	clear:both;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear:both;
+}
+.clearfix {
+	zoom:1;
+}
+/* ---------------------------------------- entire slideshow box -----------------------------*/
+
+#slideshow {
+	top:30px;
+	margin: 10px;
+	padding: 30px 0 0 0;
+	position: relative;
+	height: 500px;
+	width: 900px;
+	border: 1px solid rgb(200, 200, 200);
+}
+/*--------------------------------------------- Slides ------------------------------------*/
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 730px;
+	height: 332px;
+	display: none;
+}
+.slide img {
+	float: left;
+	margin: 30px 0 0 15px;
+	width: 527px;
+	border: 1px solid rgb(244, 244, 244);
+}
+/*   ---------------------------------buttons for slideshow ---------------------------------------*/
+
+#slideshowControls {
+	position: absolute;
+	bottom: 30px;
+	right: 80px;
+	width: 200px;
+}
+.slideshowControl {
+	border: 1px solid #e1dece;
+	float: left;
+	/*margin: 5px 0 0 5px;*/
+    background: #151538;
+	width: 38px;
+	height: 36px;
+	color: #554d31;
+	font: 14px Arial, sans-serif;
+	text-align: center;
+	cursor: pointer;
+}
+.slideshowControl span {
+	line-height: 36px;
+	vertical-align: middle;
+}
+.slideshowControlOn {
+	background-color:#fff;
+}
+/*  ----------------------------------slide-show button------------------------------------     */
+.slideshowActive {
+	border: 1px solid rgb(161, 155, 137);
+	background-color:#fff;
+}
+/*    -------------------------------text in slide show-------------------------------------    */
+.slidecopy {
+	position: absolute;
+	left: 565px;
+	top: 20px;
+	width: 300px;
+}
+/*---------------------------------------header and paragraph in slide show   h2 ------------------------------*/
+#slideshow h2 {
+	color:#FFF;
+	text-transform: uppercase;
+	font: 20px Arial, sans-serif;
+	text-align:center;/*margin: 10px 0;*/
+}
+.slidecopy p {
+	font: 17px Arial, sans-serif;
+	line-height: 1.75em;
+}
