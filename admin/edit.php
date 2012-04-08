@@ -6,12 +6,15 @@ $errors = array();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
-
-
 if (empty($id)) {
 	header('Location index.php');
 	exit;
 }
+
+$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+$latitude = filter_input(INPUT_POST, 'latitude', FILTER_SANITIZE_STRING);
+$longitude = filter_input(INPUT_POST, 'longitude', FILTER_SANITIZE_STRING);
+$address = filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING);
 
 if  ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (empty($name)) {
