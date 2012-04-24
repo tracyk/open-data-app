@@ -20,12 +20,11 @@ $(document).ready(function () {
 		// Style the content in your CSS
 		var info = '<div class="info-window">'
 			+ '<strong>' 
-			+ '<a href="single.php?id='+i+'">' 
-			+ ottawamapped 
-			+ '</a>' 
+			+ '<a href="single.php?id='+i+'"> ' + ottawamapped + '</a>' 
 			+ '</strong>'
 			+ '</div>' 
-		;
+			+ '<div class="exemple"><div class="basic" id="12_1"></div></div>'
+;
 
 		// Determine this ottawamapped's latitude and longitude
 		var lat = $(this).find('meta[itemprop="latitude"]').attr('content');
