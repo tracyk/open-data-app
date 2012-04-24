@@ -1,0 +1,211 @@
+html {
+	
+	background: #e8faec; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e8faec 1%, #ffffff 51%, #9ce8a7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e8faec), color-stop(51%,#ffffff), color-stop(100%,#9ce8a7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e8faec 1%,#ffffff 51%,#9ce8a7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e8faec 1%,#ffffff 51%,#9ce8a7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e8faec 1%,#ffffff 51%,#9ce8a7 100%); /* IE10+ */
+	background: linear-gradient(top,  #e8faec 1%,#ffffff 51%,#9ce8a7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8faec', endColorstr='#9ce8a7',GradientType=0 ); /* IE6-9 */
+}
+
+body {
+	margin: 0;
+	padding:0;
+	width: 100%;	
+}
+
+.wrapper {
+	width: 1024px;
+	height: 768px;
+	
+	margin: 0 auto;
+	border: solid 4px #000;
+	
+	overflow-x:hidden;
+	
+	font-family: 'Averia Libre', cursive;
+	
+	position: relative;
+	
+}
+
+#container {
+	height: 568px;
+	width: 100%;
+}
+
+
+#map {
+	margin-top:10px;
+	width: 650px;
+	height: 450px;
+	float: right;
+	display: inline;
+	border: solid 4px #000;	
+}
+
+.mapped {
+	width: 30%;
+	height: 500px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	float: left;
+	display: inline;
+	margin-left:0.5em;
+	
+	/*border: solid 4px #000;*/
+}
+
+.mapped a {
+	color:#03F;
+	
+	text-decoration:none;
+	
+	font-size:17px;
+	font-weight:normal;
+	
+	padding:0.3em;
+}
+
+.mapped li {
+	cursor: pointer;
+	
+	width: 100%;
+	margin:0.8em;	
+}
+
+.mapped a:hover {
+	background-color: #03f;
+	color:#fff;
+}
+
+.mapping {
+	float: right;
+	width: 60%;
+	margin-right: 0.5em;
+	
+	position: relative;
+}
+
+header img{
+	width: 100%;
+}
+
+footer {
+	color:#333;
+	position:absolute;
+	top:49em;
+	left:41em;
+	bottom:0;
+}
+
+.admin {
+	color:#333;
+	background-color:#9ce8af;
+	text-decoration: none;
+	
+	opacity: 0.7;
+	
+	padding: 0.5em;
+	
+	text-align:center;
+	
+	
+}
+
+.admin:hover {
+	color:#9ce8af;
+	background-color:#333;
+}
+
+.grass {
+	width: 100%;
+	height: 250px;
+	background: transparent url(../images/grass.png) repeat;
+}
+
+/*-------------------------------------------------- Single Page --------------------------------------*/
+
+.home-class {
+	left:22em;
+	top:29em;
+	
+	position:absolute;
+}
+
+.admin-class-button {
+	right:22em;
+	top:29em;
+	
+	position:absolute;
+}
+
+.single-page {
+	margin:0 auto;
+	width:300px;
+	top:10em;
+	
+	border: solid 4px #000;
+	
+	padding:1em;
+}
+
+.main-container {
+	height:728px;
+	width:1024px;
+}
+
+/*------------------------------------------------Sign in -------------------------------------*/
+
+#sign-in {
+	position:absolute;
+	left:15em;
+	top:10em;
+	
+	border:solid 10px #000;
+	width:20em;
+	height:15em;
+	
+	font-size:20px;
+	
+	background-color:#9ce8af;
+}
+
+
+/*------------------------------------------------Admin Page----------------------------------------------*/
+
+
+
+/*-----------------------------------------------rating system ----------------------------------------*/
+
+#rating {
+	overflow:hidden
+}
+
+#rating .undone, #rating .fade {
+background:url("images/star.gif") -30px 0 no-repeat;
+width:28px;
+display:block;
+height:30px;
+float:left;
+margin-right:4px;
+text-indent:-99999px
+}
+
+#rating .done {
+background:url("images/star.gif") no-repeat;
+width:28px;
+display:block;
+height:30px;
+float:left;
+margin-right:4px;
+text-indent:-99999px
+}
+
+#rating .undone:hover {
+	background-position:0
+}
+
+
