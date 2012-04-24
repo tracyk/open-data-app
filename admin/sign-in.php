@@ -50,16 +50,9 @@
 			}
 		}
 	}
-?><!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Sign in</title>
-	<link href="../css/admin.css" rel="stylesheet">
-</head>
-
-<body>
-
+	include '../includes/theme-top.php';
+?>
+<div id="container" class="clearfix">
 	<form id="sign-in" method="post" action="sign-in.php">
 	
 		<div>
@@ -78,6 +71,10 @@
 		<button type="submit">Sign In</button>
 		</div>
 	</form>
-	
-</body>
-</html>
+</div>	
+
+<?php
+
+include '../includes/theme-bottom.php';
+
+?>

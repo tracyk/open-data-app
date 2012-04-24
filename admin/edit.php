@@ -1,13 +1,11 @@
 <?php
 
-require_once 'includes/filter-wrapper.php';
-
 $errors = array();
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 if (empty($id)) {
-	header('Location index.php');
+	header('Location: index.php');
 	exit;
 }
 
@@ -33,13 +31,15 @@ if  ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	}
 	
 	if (empty($errors)) {
-		require_once 'includes/db.php'; 
+		require_once '../includes/db.php'; 
 	
 		
 		$sql = $db->prepare('
-			INSERT INTO ottawamapped (name, latitude, longitude, address)
-			VALUES (:name, :latitude, :longitude, :address)
+			UPDATE ottawamapped 
+			SET name = :name, latitude = :latitude, longitude = :longitude, address = :address
+			WHERE id = :id
 		');
+		
 		 $sql->bindValue(':name', $name, PDO::PARAM_STR);
 		 $sql->bindValue(':latitude', $latitude, PDO::PARAM_STR);
 		 $sql->bindValue(':longitude', $longitude, PDO::PARAM_STR);
@@ -47,18 +47,18 @@ if  ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		 $sql->bindValue(':id', $id, PDO::PARAM_STR);
 		 $sql->execute();
 		 
-	header('Location index.php');
+	header('Location: index.php');
 	exit;
 }
 	
 
 
 } else {
-	require_once 'includes/db.php';
+	require_once '../includes/db.php';
 	$sql = $db->prepare('
-	SELECT id, name, latitude, longitude, address
-	FROM ottawamapped
-	WHERE id = :id
+		SELECT id, name, latitude, longitude, address
+		FROM ottawamapped
+		WHERE id = :id
 	');
 	
 	$sql->bindValue(':id', $id, PDO::PARAM_INT);
@@ -71,45 +71,39 @@ if  ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$street_address = $results['address'];
 }
 
-
-?><!DOCTYPE HTML>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Add a Volleyball Court</title>
-</head>
-
-<body>
+include '../includes/theme-top.php';
+?>
 
 
+<div id="container" class="clearfix">
 	<form method="post" action="edit.php?id=<?php echo $id; ?>">
-    	</div>
+    	<div>
         	<label for="name">Name<?php if (isset($errors['name'])): ?> <strong> is required </strong> <?php endif; ?> </label>
             <input id="name" name="name" value="<?php echo $name; ?>" >
         </div>
         
-       </div>
+       <div>
         	<label for="latitude">Latitude<?php if (isset($errors['latitude'])): ?> <strong> is required </strong> <?php endif; ?> </label>
             <input id="latitude" name="latitude" value="<?php echo $latitude; ?>" >
         </div>
 		
-		</div>
+		<div>
         	<label for="longitude">Longitude<?php if (isset($errors['longitude'])): ?> <strong> is required </strong> <?php endif; ?> </label>
             <input id="longitude" name="longitude" value="<?php echo $longitude; ?>" >
         </div>
 		
-		</div>
+		<div>
         	<label for="address">Street Address<?php if (isset($errors['address'])): ?> <strong> is required </strong> <?php endif; ?> </label>
             <input id="address" name="address" value="<?php echo $address; ?>" >
         </div>
        
-       <button type="submit"> Add</button>
+       <button type="submit"> Edit</button>
      </form>           	
+</div>	 
+	 
+	 	
+<?php
 
+include '../includes/theme-bottom.php';
 
-
-
-
-
-</body>
-</html>
+?>
