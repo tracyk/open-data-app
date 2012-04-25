@@ -21,9 +21,9 @@ include '../includes/theme-top.php';
 
 	<p class="sign-out"><a href="sign-out.php">Sign Out</a></p>
 	<a href="add.php"> Add a Volleyball Court</a>
-
-
+	
 	<div id="container">
+		<div class="wrapper">
 			<ol>
 				<?php foreach ($results as $volley) : ?>
 					<li itemscope itemtype="http://schema.org/TouristAttraction"> <a href="../single.php?id=<?php echo $volley['id']; ?>" itemprop="name"><?php echo $volley['name']; ?></a> <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates">
@@ -36,6 +36,7 @@ include '../includes/theme-top.php';
 					</li>
 					<?php endforeach; ?>
 			</ol>
+		</div>	
 	</div>	
 		
 <?php

@@ -12,6 +12,6 @@
 <div class="wrapper">
 
 <header> 
-	<img src="../images/ottawa-mapped-banner.jpg"  alt="main banner in the document"> 
+	<img src="../images/ottawa-mapped-banner.jpg"  alt="main banner in the document">
 </header>
 
