@@ -41,24 +41,22 @@ include 'includes/theme-top.php';
 
 ?>
 
-	<div id="container">
+<div id="container">
 		<div class="single-page">
-			<h1><?php echo $results['name']; ?></h1>
-			<dl>
-				<dt>Address</dt><dd><?php echo $results['address']; ?></dd>
-				<dt>Longitude</dt><dd><?php echo $results['longitude']; ?></dd>
-				<dt>Latitude</dt><dd><?php echo $results['latitude']; ?></dd>
-			</dl>
-			
-			<div class="exemple">
-				<div class="basic" id="12_1"></div>
-			</div>
-		</div>	
-		<a href="index.php" class="admin home-class">Home</a>
-		<a href="admin/index.php" class="admin admin-class-button">Admin</a>
-	</div>
-
-
+				<h1><?php echo $results['name']; ?></h1>
+				<dl>
+						<dt>Address</dt>
+						<dd><?php echo $results['address']; ?></dd>
+						<dt>Longitude</dt>
+						<dd><?php echo $results['longitude']; ?></dd>
+						<dt>Latitude</dt>
+						<dd><?php echo $results['latitude']; ?></dd>
+				</dl>
+				<div class="exemple">
+						<div class="basic" id="12_1"></div>
+				</div>
+		</div>
+		<a href="index.php" class="admin home-class">Home</a> <a href="admin/index.php" class="admin admin-class-button">Admin</a> </div>
 <?php
 
 include 'includes/theme-bottom.php';

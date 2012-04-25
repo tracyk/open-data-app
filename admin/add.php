@@ -58,32 +58,42 @@ include '../includes/theme-top.php';
 ?>
 
 <div id="container" class="clearfix">
-	<form method="post" action="add.php">
-	
-    	<div>
-        	<label for="name">Name<?php if (isset($errors['name'])): ?> <strong> is required </strong> <?php endif; ?> </label>
-            <input id="name" name="name" value="<?php echo $name; ?>" >
-        </div>
-        
-       <div>
-        	<label for="latitude">Latitude<?php if (isset($errors['latitude'])): ?> <strong> is required </strong> <?php endif; ?> </label>
-            <input id="latitude" name="latitude" value="<?php echo $latitude; ?>" >
-        </div>
-		
-		 <div>
-        	<label for="longitude">Longitude<?php if (isset($errors['longitude'])): ?> <strong> is required </strong> <?php endif; ?> </label>
-            <input id="longitude" name="longitude" value="<?php echo $longitude; ?>" >
-        </div>
-		
-		 <div>
-        	<label for="address">Street Address<?php if (isset($errors['address'])): ?> <strong> is required </strong> <?php endif; ?> </label>
-            <input id="address" name="address" value="<?php echo $address; ?>" >
-        </div>
-       
-       <button type="submit"> Add</button>
-     </form>   
+		<form method="post" action="add.php">
+				<div>
+						<label for="name">Name
+								<?php if (isset($errors['name'])): ?>
+								<strong> is required </strong>
+								<?php endif; ?>
+						</label>
+						<input id="name" name="name" value="<?php echo $name; ?>" >
+				</div>
+				<div>
+						<label for="latitude">Latitude
+								<?php if (isset($errors['latitude'])): ?>
+								<strong> is required </strong>
+								<?php endif; ?>
+						</label>
+						<input id="latitude" name="latitude" value="<?php echo $latitude; ?>" >
+				</div>
+				<div>
+						<label for="longitude">Longitude
+								<?php if (isset($errors['longitude'])): ?>
+								<strong> is required </strong>
+								<?php endif; ?>
+						</label>
+						<input id="longitude" name="longitude" value="<?php echo $longitude; ?>" >
+				</div>
+				<div>
+						<label for="address">Street Address
+								<?php if (isset($errors['address'])): ?>
+								<strong> is required </strong>
+								<?php endif; ?>
+						</label>
+						<input id="address" name="address" value="<?php echo $address; ?>" >
+				</div>
+				<button type="submit"> Add</button>
+		</form>
 </div>
-
 <?php
 
 include '../includes/theme-bottom.php';

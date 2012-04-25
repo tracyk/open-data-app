@@ -52,29 +52,27 @@
 	}
 	include '../includes/theme-top.php';
 ?>
-<div id="container" class="clearfix">
-	<div class="wrapper">
-		<form id="sign-in" method="post" action="sign-in.php">
-		
-			<div>
-				<h1>Sign in</h1>
-			</div>
-			
-			<div>
-				<label for="email">E-mail Address</label>
-				<input type="email" id="email" name="email" required>
-			</div>
-			<div>
-				<label for="password">Password</label>
-				<input type="password" id="password" name="password" required>
-			</div>
-			<div>
-			<button type="submit">Sign In</button>
-			</div>
-		</form>
-	</div>
-</div>	
 
+<div id="container" class="clearfix">
+		<div class="wrapper">
+				<form id="sign-in" method="post" action="sign-in.php">
+						<div>
+								<h1>Sign in</h1>
+						</div>
+						<div>
+								<label for="email">E-mail Address</label>
+								<input type="email" id="email" name="email" required>
+						</div>
+						<div>
+								<label for="password">Password</label>
+								<input type="password" id="password" name="password" required>
+						</div>
+						<div>
+								<button type="submit">Sign In</button>
+						</div>
+				</form>
+		</div>
+</div>
 <?php
 
 include '../includes/theme-bottom.php';

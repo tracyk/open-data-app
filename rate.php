@@ -16,13 +16,10 @@ include 'includes/theme-top.php';
 ?>
 
 <div class="exemple">
-	<div class="basic" id="12_1"></div>
+		<div class="basic" id="12_1"></div>
 </div>
-
-
 <?php
 
 include 'includes/theme-bottom.php';
 
 ?>
-
