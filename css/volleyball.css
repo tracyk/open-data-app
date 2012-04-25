@@ -20,6 +20,8 @@ body {
 	border: solid 4px #000;
 	font-family: 'Averia Libre', cursive;
 	position: relative;
+	
+	overflow-y:scroll;
 }
 #container {
 	height: 568px;
