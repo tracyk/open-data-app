@@ -36,7 +36,7 @@ $(document).ready(function () {
 			position : pos
 			, map : map
 			, title : ottawamapped
-			, icon : 'images/icons.png'
+			, icon : 'images/volleyball.png'
 			, animation: google.maps.Animation.DROP
 		});
 
