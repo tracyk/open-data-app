@@ -1,8 +1,8 @@
 	</div>
-	<footer>&copy 2012, Tracy Karnabi</footer>
-	<div class="grass">
+	<div id="grass">
 		<img src="../images/grass.png" />
 	</div>	
+	<footer>&copy 2012, Tracy Karnabi</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCOSF6EUJHi28FLeCSkKsQsG1gtn4vRkN4&sensor=false"></script>
