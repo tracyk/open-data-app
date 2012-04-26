@@ -28,7 +28,7 @@ body {
 	width: 100%;
 }
 #map {
-	margin-top:10px;
+	margin-top:30px;
 	width: 620px;
 	margin-right:40px;
 	height: 450px;
@@ -37,7 +37,7 @@ body {
 	border: solid 4px #000;
 }
 .mapped {
-	width: 30%;
+	width: 28%;
 	height: 500px;
 	overflow-y:scroll;
 	overflow-x:hidden;
@@ -83,6 +83,12 @@ footer {
 	opacity: 0.7;
 	padding: 0.5em;
 	text-align:center;
+}
+
+.admin-login {
+	top:1em;
+	left:20px;
+	position:relative;
 }
 .admin:hover {
 	color:#9ce8af;

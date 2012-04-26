@@ -56,7 +56,8 @@ include 'includes/theme-top.php';
 						<div class="basic" id="12_1"></div>
 				</div>
 		</div>
-		<a href="index.php" class="admin home-class">Home</a> <a href="admin/index.php" class="admin admin-class-button">Admin</a> </div>
+		<a href="index.php" class="admin home-class">Home</a> 
+		<a href="admin/index.php" class="admin admin-class-button">Admin</a> </div>
 <?php
 
 include 'includes/theme-bottom.php';

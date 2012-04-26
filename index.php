@@ -32,7 +32,7 @@ include 'includes/theme-top.php';
 						</span> </li>
 				<?php endforeach; ?>
 		</ol>
-		<a href="admin/index.php" class="admin">Admin Login</a>
+		<a href="admin/index.php" class="admin admin-login">Admin Login</a>
 		<div id="map"></div>
 </div>
 <?php
